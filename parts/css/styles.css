@@ -166,8 +166,8 @@ p {
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
-    margin: 0 auto;
-    max-width: 1170px;
+    /* margin: 0 auto; */
+    /* max-width: 1170px; */
   }
 }
 
@@ -183,21 +183,22 @@ p {
   margin-bottom: 2rem;
 }
 
-@media screen and (min-width:992px){
-  .about-center{
+@media screen and (min-width: 992px) {
+  .about-center {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .about-img,.about-info{
+  .about-img,
+  .about-info {
     flex: 0 0 calc(50% - 2rem);
-      margin-bottom: 0;
-      align-self: center;
+    margin-bottom: 0;
+    align-self: center;
   }
 }
 
-@media screen and (min-width:1170px) {
-  .about-img::before{
+@media screen and (min-width: 1170px) {
+  .about-img::before {
     content: "";
     position: absolute;
     border: 0.5rem solid var(--clr-primary-5);
@@ -209,15 +210,73 @@ p {
     left: -1.5rem;
     /* z-index: -1; */
   }
-  .about-img{
+  .about-img {
     position: relative;
   }
-  .about-photo{
+  .about-photo {
     position: relative;
   }
 }
 
 /* Services */
+.services {
+  background: var(--clr-grey-10);
+}
+
+.service {
+  text-align: center;
+  margin-bottom: 3rem;
+  /* border: 5px solid red; */
+}
+
+.service-icon {
+  background: var(--clr-primary-5);
+  color: var(--clr-grey-1);
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.service-text {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .service-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .service {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .service {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .service {
+    display: flex;
+    text-align: left;
+  }
+  .service-icon{
+    align-self:flex-start;
+  }
+  .service-info{
+    padding-left: 1rem;
+  }
+  .service-title{
+    margin-bottom: 0.5rem;
+  }
+}
 
 /* Featured Tours */
 

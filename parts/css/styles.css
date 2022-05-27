@@ -267,19 +267,111 @@ p {
     display: flex;
     text-align: left;
   }
-  .service-icon{
-    align-self:flex-start;
+  .service-icon {
+    align-self: flex-start;
   }
-  .service-info{
+  .service-info {
     padding-left: 1rem;
   }
-  .service-title{
+  .service-title {
     margin-bottom: 0.5rem;
   }
 }
 
 /* Featured Tours */
+.features {
+}
 
+.feature-center {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.feature {
+  background: var(--clr-grey-10);
+  /* border-bottom-left-radius: var(--radius); */
+  /* border-bottom-right-radius: var(--radius); */
+  /* box-shadow: 5px 5px 15px var(--clr-grey-8); */
+  box-shadow: var(--light-shadow);
+  margin-bottom: 2rem;
+  max-width: 40rem;
+  transition: var(--transition);
+}
+
+.feature:hover {
+  box-shadow: var(--dark-shadow);
+  transform: scale(1.02);
+}
+
+.feature-img {
+  position: relative;
+}
+
+.feature-photo {
+  height: 15rem;
+  object-fit: cover;
+}
+
+.feature-time {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-transform: capitalize;
+  font-size: 0.6rem;
+  background: var(--clr-primary-8);
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0;
+}
+
+.feature-info {
+  padding: 1.25rem 1.5rem;
+}
+
+.other-info {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  color: var(--clr-primary-5);
+}
+
+.place-info {
+}
+
+.time-info {
+}
+
+.price-info {
+}
+
+.feature-btn-box {
+  text-align: center;
+}
+
+.feature-btn {
+}
+
+@media screen and (min-width: 768px) {
+  .feature-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .feature {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+/* @media screen and (min-width: 992px) {
+  .feature-center {
+  }
+  .feature {
+    flex: 0 0 calc(33.3% - 2rem);
+  }
+} */
+@media screen and (min-width: 1170px) {
+  .feature {
+    flex: 0 0 calc(33.3% - 2rem);
+  }
+}
 /* Contact */
 
 /* Gallery */

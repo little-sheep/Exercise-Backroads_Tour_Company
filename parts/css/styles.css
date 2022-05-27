@@ -325,7 +325,34 @@ p {
 
 .feature-info {
   padding: 1.25rem 1.5rem;
+  /* position: relative; */
 }
+
+/* My own solution */
+/* .special-time {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+} */
+
+/* Teacher's solution */
+.special-title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.special-title p,
+h4 {
+  margin-bottom: 0.75rem;
+  line-height: 1.25rem;
+}
+
+.special-title p {
+  color: var(--clr-grey-6);
+}
+
+/* end of teacher's solution */
 
 .other-info {
   display: flex;

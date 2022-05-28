@@ -399,8 +399,58 @@ h4 {
     flex: 0 0 calc(33.3% - 2rem);
   }
 }
-/* Contact */
 
+/* Contact */
+.contact {
+  width: 100%;
+  background: var(--clr-primary-6);
+}
+.contact-title {
+  color: var(--clr-white);
+}
+.contact-title h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.contact-title p {
+  color: var(--clr-grey-9);
+}
+.contact-title p span {
+  text-transform: capitalize;
+}
+
+.contact-content {
+  font-size: 0.875rem;
+}
+
+.contact-email {
+  border: none;
+  padding: 0.5rem;
+  min-width: 320px;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+}
+
+.contact-button {
+  border: none;
+  padding: 0.5rem;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  background: var(--clr-primary-8);
+  color: var(--clr-grey-3);
+  margin-left: 0.3rem;
+}
+
+@media screen and (min-width: 1170px) {
+  .contact-center {
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact-email {
+    box-sizing: border-box;
+    width: 400px;
+  }
+}
 /* Gallery */
 
 /* Footer */

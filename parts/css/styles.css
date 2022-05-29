@@ -555,20 +555,28 @@ h4 {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 1rem;
+  transition: var(--transition);
+  /* gap: 1rem; */
 }
 .footer-nav li {
   /* border: 2px solid red; */
   margin: 0 0.875rem;
   text-align: center;
-  float: left;
+  /* float: left; */
   letter-spacing: var(--spacing);
 }
+
+.footer-nav a {
+  color: var(--clr-white);
+}
+
 
 .footer-icons {
   letter-spacing: var(--spacing);
   font-size: 2rem;
   margin-bottom: 1rem;
   cursor: pointer;
+  transition: var(--transition);
 }
 
 .footer-icon:hover,

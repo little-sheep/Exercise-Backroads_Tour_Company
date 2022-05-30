@@ -172,6 +172,121 @@ p {
 }
 
 /* Navbar */
+.navbar {
+  position: fixed;
+  min-width: 100%;
+  padding: 1rem 1.5rem;
+  border: 1px solid red;
+}
+
+.navbar-box,
+.navbar-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navbar-icons {
+  font-size: 1.2rem;
+  letter-spacing: var(--spacing);
+  gap: 0.5rem;
+}
+
+.navbar-icon,
+.navbar-btn {
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+
+.navbar-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.website-logo {
+  position: relative;
+}
+
+.navbar-icon {
+  visibility: hidden;
+}
+.navbar-list {
+  /* visibility: collapse; */
+}
+
+.navbar-links {
+  /* border: 1px solid red; */
+  position: absolute;
+  /* top: 4rem; */
+  top: 4rem;
+  left: 0;
+  /* padding-left: 1.5rem; */
+  width: 100%;
+  transition: var(--transition);
+  margin-top: -25rem;
+}
+.show-navbar-list {
+  margin-top: 0;
+}
+
+.navbar-links li {
+  /* padding-left: 1.5rem; */
+  /* margin-bottom: 2rem; */
+  /* margin-top: 2rem; */
+  padding: 1rem 1.5rem;
+  transition: var(--transition);
+}
+
+.navbar-links li:hover {
+  background: var(--clr-primary-8);
+}
+
+.navbar-link {
+  text-transform: capitalize;
+  color: var(--clr-grey-1);
+  /* border: 1px solid red; */
+  font-size: 1rem;
+  letter-spacing: var(--spacing);
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-list {
+    /* visibility: visible; */
+    display: flex;
+    width: 50%;
+    /* border: 1px solid red; */
+    position: relative;
+  }
+  .navbar-links {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .navbar-links li {
+    /* border: 1px solid red; */
+    padding: 0;
+  }
+  .navbar-links:hover li {
+    background: transparent;
+  }
+  .navbar-link:hover {
+    color: var(--clr-primary-7);
+  }
+  .navbar-btn {
+    visibility: hidden;
+  }
+  .navbar-icon {
+    visibility: visible;
+  }
+  .navbar-icon:hover {
+    color: var(--clr-primary-7);
+  }
+}
+
 /* Cover */
 
 /* About */
@@ -569,7 +684,6 @@ h4 {
 .footer-nav a {
   color: var(--clr-white);
 }
-
 
 .footer-icons {
   letter-spacing: var(--spacing);

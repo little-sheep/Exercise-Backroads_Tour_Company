@@ -172,11 +172,14 @@ p {
 }
 
 /* Navbar */
+
+/* My solution */
 .navbar {
+  background: var(--clr-white);
   position: fixed;
   min-width: 100%;
   padding: 1rem 1.5rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .navbar-box,
@@ -196,6 +199,7 @@ p {
 .navbar-btn {
   color: var(--clr-primary-5);
   transition: var(--transition);
+  font-size: 1.2rem;
 }
 
 .navbar-btn {
@@ -216,21 +220,25 @@ p {
 }
 
 .navbar-links {
+  background: var(--clr-white);
   /* border: 1px solid red; */
   position: absolute;
-  /* top: 4rem; */
   top: 4rem;
   left: 0;
   /* padding-left: 1.5rem; */
   width: 100%;
   transition: var(--transition);
-  margin-top: -25rem;
+  /* margin-top: -25rem; */
+  display: none;
 }
 .show-navbar-list {
-  margin-top: 0;
+  /* margin-top: 0; */
+  box-shadow: 3px 5px 5px var(--clr-grey-9);
+  display: block;
 }
 
 .navbar-links li {
+  /* border: 1px solid red; */
   /* padding-left: 1.5rem; */
   /* margin-bottom: 2rem; */
   /* margin-top: 2rem; */
@@ -242,17 +250,21 @@ p {
   background: var(--clr-primary-8);
 }
 
+.navbar-links li:hover .navbar-link {
+  padding-left: 0.5rem;
+}
+
 .navbar-link {
   text-transform: capitalize;
   color: var(--clr-grey-1);
   /* border: 1px solid red; */
   font-size: 1rem;
   letter-spacing: var(--spacing);
+  transition: var(--transition);
 }
 
 @media screen and (min-width: 992px) {
   .navbar-list {
-    /* visibility: visible; */
     display: flex;
     width: 50%;
     /* border: 1px solid red; */
@@ -265,6 +277,8 @@ p {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 0;
+    padding: 0.2rem;
   }
   .navbar-links li {
     /* border: 1px solid red; */

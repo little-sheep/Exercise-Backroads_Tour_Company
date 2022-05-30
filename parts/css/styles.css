@@ -137,7 +137,7 @@ p {
 
 .btn:hover {
   color: var(--clr-primary-1);
-  background: var(--clr-primary-7);
+  background: var(--clr-primary-8);
 }
 
 .section {
@@ -179,7 +179,9 @@ p {
   position: fixed;
   min-width: 100%;
   padding: 1rem 1.5rem;
+  z-index: 9;
   /* border: 1px solid red; */
+  box-shadow: 3px 2px 15px var(--clr-grey-7);
 }
 
 .navbar-box,
@@ -206,6 +208,7 @@ p {
   border: none;
   background: transparent;
   cursor: pointer;
+  font-size: 1.3rem;
 }
 
 .website-logo {
@@ -279,6 +282,7 @@ p {
     gap: 1rem;
     margin-top: 0;
     padding: 0.2rem;
+    box-shadow: none;
   }
   .navbar-links li {
     /* border: 1px solid red; */
@@ -287,8 +291,11 @@ p {
   .navbar-links:hover li {
     background: transparent;
   }
+  .navbar-links li:hover .navbar-link {
+    padding-left: 0;
+  }
   .navbar-link:hover {
-    color: var(--clr-primary-7);
+    color: var(--clr-primary-5);
   }
   .navbar-btn {
     visibility: hidden;
@@ -297,7 +304,7 @@ p {
     visibility: visible;
   }
   .navbar-icon:hover {
-    color: var(--clr-primary-7);
+    color: var(--clr-primary-8);
   }
 }
 
@@ -323,7 +330,8 @@ p {
 .cover-title {
   text-transform: uppercase;
   text-align: center;
-  width: 60vw;
+  width: 80vw;
+  font-weight: 500;
   /* border: 5px solid tomato; */
 }
 
@@ -331,30 +339,37 @@ p {
   text-align: center;
   color: var(--clr-white);
   letter-spacing: var(--spacing);
-  width: 85%;
-  max-width: 45rem;
+  width: 90%;
+  max-width: 40rem;
 }
 
 .cover-btn {
   height: 60px;
+  width: 16rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: var(--clr-white);
+  color: var(--clr-primary-5);
+}
+
+.cover-btn:hover {
+  background: transparent;
+  color: var(--clr-white);
+  border: 2px solid var(--clr-white);
 }
 @media screen and (min-width: 700px) {
   .cover-box {
     background: linear-gradient(
         to bottom,
-        var(--clr-primary-7),
+        var(--clr-primary-4),
+        rgba(33, 134, 143, 0.5),
         rgba(0, 0, 0, 0.75)
       ),
       url("../images/main.jpeg") center/cover no-repeat;
   }
 }
-
-
-
-
-
 
 /* About */
 /* section add to globals */
@@ -759,11 +774,20 @@ h4 {
   cursor: pointer;
   transition: var(--transition);
 }
+.footer-icon a{
+  color: var(--clr-white);
+}
 
-.footer-icon:hover,
-.footer-nav li:hover {
+.footer-icon:hover a,
+.footer-nav a:hover {
   color: var(--clr-primary-7);
 }
+
+/* 无用效果 */
+/* .footer-icon:hover,
+.footer-nav li:hover {
+  color: var(--clr-primary-7);
+} */
 
 .footer-rights h3 {
   font-size: 1rem;
